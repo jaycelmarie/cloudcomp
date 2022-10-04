@@ -19,7 +19,7 @@ jobs:
         DOCKER_USER: ${{secrets.jaycelmarie}}
         DOCKER_PASSWORD: ${{secrets.jammy1311891}}
       run: |
-        docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+        docker login -u $jaycelmarie -p $jammy1311891
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag jaycelmarie/first-repo:$(date +%s)
       
